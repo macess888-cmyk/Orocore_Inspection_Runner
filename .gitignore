@@ -6,3 +6,7 @@ results/*
 receipts/*
 !results/.gitkeep
 !receipts/.gitkeep
+*.egg-info/
+build/
+dist/
+inspection_output/

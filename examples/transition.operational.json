@@ -1,0 +1,114 @@
+{
+  "transition_id": "RUNNER-SYNTHETIC-001",
+  "subject": {
+    "system_id": "PAYMENT_PLATFORM_SYNTHETIC_001",
+    "component_before": "CRYPTO_COMPONENT_V1",
+    "component_after": "CRYPTO_COMPONENT_V2"
+  },
+  "authority": {
+    "prior_authority_state": {
+      "supplier": "SUPPLIER_SYNTHETIC_A",
+      "permitted_actions": [
+        "MAINTAIN_CURRENT_COMPONENT"
+      ]
+    },
+    "mutation": {
+      "present": true,
+      "basis_id": "CHANGE-AUTHORITY-001",
+      "basis_status": "CURRENT",
+      "requested_scope_change": [
+        "CHANGE_CRYPTO_COMPONENT"
+      ],
+      "basis_scope": [
+        "CHANGE_CRYPTO_COMPONENT"
+      ]
+    },
+    "resulting_authority_state": {
+      "supplier": "SUPPLIER_SYNTHETIC_A",
+      "permitted_actions": [
+        "MAINTAIN_CURRENT_COMPONENT",
+        "CHANGE_CRYPTO_COMPONENT"
+      ]
+    }
+  },
+  "transition_evidence": {
+    "transition_id": "RUNNER-SYNTHETIC-001",
+    "subject_id": "PAYMENT_PLATFORM_SYNTHETIC_001",
+    "state_before": {
+      "component": "CRYPTO_COMPONENT_V1"
+    },
+    "proposed_transition": {
+      "type": "SUPPLIER_CRYPTOGRAPHIC_COMPONENT_CHANGE",
+      "target": "CRYPTO_COMPONENT_V2"
+    },
+    "evidence": [
+      {
+        "evidence_id": "CHANGE-RECEIPT-001",
+        "type": "CHANGE_RECEIPT"
+      }
+    ],
+    "evidence_time": "2026-11-11T20:00:00Z",
+    "evidence_validity": "CURRENT",
+    "authority_reference": "CHANGE-AUTHORITY-001",
+    "authority_scope": [
+      "CHANGE_CRYPTO_COMPONENT"
+    ],
+    "authority_time": "2026-11-11T19:00:00Z",
+    "dependency_state": [],
+    "unresolved_obligations": [],
+    "revalidation_trigger": [],
+    "closure_state": "OPEN",
+    "provenance": {
+      "source": "RUNNER-SYNTHETIC-001"
+    }
+  },
+  "restriction_continuity": {
+    "restriction_before": {
+      "restriction_id": "R-001",
+      "rule": "DO_NOT_CONTINUE_WITHOUT_REVALIDATION"
+    },
+    "handoff": {
+      "occurred": true,
+      "restriction_transferred": true,
+      "unresolved_obligations_transferred": true
+    },
+    "restriction_after": {
+      "restriction_id": "R-001",
+      "rule": "DO_NOT_CONTINUE_WITHOUT_REVALIDATION"
+    },
+    "restart": {
+      "attempted": false,
+      "criteria_satisfied": false
+    }
+  },
+  "assurance_transfer": {
+    "validated_pair": {
+      "model_id": "CRYPTO_COMPONENT_V1",
+      "monitor_id": "VALIDATION_TOOLCHAIN_001"
+    },
+    "current_pair": {
+      "model_id": "CRYPTO_COMPONENT_V2",
+      "monitor_id": "VALIDATION_TOOLCHAIN_001"
+    },
+    "transfer_test": {
+      "performed": true,
+      "result": "PASS"
+    }
+  },
+  "witness_independence": {
+    "receipts": [
+      {
+        "receipt_id": "SUPPLIER-RECEIPT-001",
+        "source_id": "SUPPLIER-SOURCE-A",
+        "derived_dataset_id": "SUPPLIER-DATASET-001"
+      },
+      {
+        "receipt_id": "VALIDATOR-RECEIPT-001",
+        "source_id": "VALIDATOR-SOURCE-B",
+        "derived_dataset_id": "VALIDATOR-DATASET-002"
+      }
+    ],
+    "source_independence_known": true
+  },
+  "requested_action": "INSPECT_ONLY"
+}

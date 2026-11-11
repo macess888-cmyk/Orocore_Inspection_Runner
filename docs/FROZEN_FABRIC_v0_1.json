@@ -1,0 +1,51 @@
+{
+  "artifact": "Orocore Frozen Inspection Fabric v0.1",
+  "validation_basis": {
+    "repository": "Orocore_Integration_Series_001",
+    "head": "41a9e99d330c37fe4b4c7f3f644992512f6ee0e0",
+    "checkpoint_sha256": "2D94865D989611A0C6111C0DBBD192BBC76056D394B4846ABD82DA9EF98319E9",
+    "receipt_sha256": "8C5B77567B2A9A2605DFCB14D82C04A547FDEE021F3B320F91D175C8D2F5B58F"
+  },
+  "participants": [
+    {
+      "id": "DELTA-001",
+      "repository": "Authority_Composition_Inspector",
+      "head": "d83e1aaad685d5431052e459eea50a3ac144d3dd",
+      "executable": true
+    },
+    {
+      "id": "DELTA-002",
+      "repository": "Hybrid_Witness_Traceability_Model",
+      "head": "010740f418a01b8c8c415493b36988df8e43ad68",
+      "executable": false,
+      "role": "TRANSITION_EVIDENCE_CONTRACT"
+    },
+    {
+      "id": "DELTA-003",
+      "repository": "Orocore_Governed_Continuity_Architecture",
+      "head": "6b23f1d677d14b06f742a4d294bcc919d78d8a53",
+      "executable": true
+    },
+    {
+      "id": "DELTA-004",
+      "repository": "Model_Monitor_Transfer_Inspector",
+      "head": "58a1105c18014d2a290d24187cafe597bdc95ea2",
+      "executable": true
+    },
+    {
+      "id": "DELTA-005",
+      "repository": "Witness_Independence_Inspector",
+      "head": "be40c13f23f3e33dc549ecfffe5e81de24541fb8",
+      "executable": true
+    },
+    {
+      "id": "COMPOSITION",
+      "repository": "Orocore_Inspector_Composition_Contract",
+      "head": "d967ba66485c49034e6f9748fd12f59653e8a80f",
+      "executable": true
+    }
+  ],
+  "observer_only": true,
+  "unknown_policy": "HOLD",
+  "execution_authority_created": false
+}

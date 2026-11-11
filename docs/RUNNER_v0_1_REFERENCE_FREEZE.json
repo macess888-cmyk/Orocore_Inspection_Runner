@@ -1,0 +1,80 @@
+{
+  "artifact": "Orocore Inspection Runner v0.1 Reference Freeze",
+  "version": "0.1.0",
+  "standing": "OPERATIONAL_BOUNDED_RUNNER",
+  "operational_head": "7449082713393da550bd1983950fbd27135c7499",
+  "command": "orocore inspect <transition.json>",
+  "validated_capabilities": [
+    "Frozen participant identity verification",
+    "Five bounded inspection surfaces",
+    "Observed-output composition",
+    "JSON result generation",
+    "Receipt generation",
+    "Human-readable report generation",
+    "Fail-closed HOLD behavior"
+  ],
+  "boundaries": [
+    "Observer-only",
+    "No transition execution",
+    "No deployment authority",
+    "No remediation authority",
+    "No global PASS",
+    "No claim truth creation",
+    "COMPOSABLE_FOR_FURTHER_REVIEW does not create permission",
+    "UNKNOWN -> HOLD"
+  ],
+  "tests": {
+    "total": 17,
+    "passed": 17
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "CD1D60CE01E6EE34F4442A89DBB9863ED43D58FCE5FB2FC005E7BA809C5531F9"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "6A954C412A2618037777BE501882797CC0560674700F01CBC417F783D4B4997A"
+    },
+    {
+      "path": "docs/RUNNER_FOUNDATION_CONTRACT.json",
+      "sha256": "2241559C3B901100C5F03DC796E5194FDAF021AE0F9FF171193F24F8C683606C"
+    },
+    {
+      "path": "docs/FROZEN_FABRIC_v0_1.json",
+      "sha256": "973FA6AA580C6973308AE201C15A03220866DFB99828560C87B8FAB947B8C35F"
+    },
+    {
+      "path": "examples/transition.example.json",
+      "sha256": "EF489185E5BD3765674CA2382B76817FAEBAF4332191CFE90FF9426EEFD12FEB"
+    },
+    {
+      "path": "examples/transition.operational.json",
+      "sha256": "311509CF1F21A5C66D86DFE799C89119EC1B4AAD06095A07664F655F3771FA7E"
+    },
+    {
+      "path": "src/orocore_runner/__init__.py",
+      "sha256": "731DF26449B76FF64F94E48397F2377C590E9504D5BDC5FF8D8AC20E70537F3E"
+    },
+    {
+      "path": "src/orocore_runner/__main__.py",
+      "sha256": "CBD7AAF6C68E259CCF2ED12D43E74D63E0854184E9C1464D163EFD9E802A0594"
+    },
+    {
+      "path": "src/orocore_runner/cli.py",
+      "sha256": "8902194BBD04B2C86427B0E18B067F5307E91AE0395D02D7F18DB5C3A3B44BFE"
+    },
+    {
+      "path": "src/orocore_runner/runner.py",
+      "sha256": "5045ABC0A91DD55561316ED28A399E33D4F868CA60B3A1656F4B412C1EEE280F"
+    },
+    {
+      "path": "tests/test_runner_foundation.py",
+      "sha256": "5BF8A5CB1353E2F5DB1DD817401CB6F794C6CE178936AC4ACF1ED363E2E4A406"
+    },
+    {
+      "path": "tests/test_runner_operational.py",
+      "sha256": "4534D15F38A76D4E698ED0BC975E039BA21A05A992161953E30AD1B2614BF758"
+    }
+  ]
+}

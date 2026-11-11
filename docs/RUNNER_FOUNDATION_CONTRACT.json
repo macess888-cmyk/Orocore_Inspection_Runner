@@ -1,0 +1,28 @@
+{
+  "artifact": "Orocore Inspection Runner Foundation Contract",
+  "phase": "APPLICATION_PHASE_001",
+  "standing": "FOUNDATION_ONLY",
+  "frozen_basis": {
+    "repository": "Orocore_Integration_Series_001",
+    "head": "41a9e99d330c37fe4b4c7f3f644992512f6ee0e0",
+    "checkpoint_sha256": "2D94865D989611A0C6111C0DBBD192BBC76056D394B4846ABD82DA9EF98319E9",
+    "receipt_sha256": "8C5B77567B2A9A2605DFCB14D82C04A547FDEE021F3B320F91D175C8D2F5B58F",
+    "standing": "OPERATIONAL_VALIDATION_PHASE_COMPLETE"
+  },
+  "runner_target": "orocore inspect transition.json",
+  "intended_outputs": [
+    "inspection_result.json",
+    "inspection_receipt.json",
+    "inspection_report.txt"
+  ],
+  "inspector_count": 5,
+  "composition_enabled": true,
+  "observer_only": true,
+  "transition_execution_enabled": false,
+  "remediation_enabled": false,
+  "deployment_enabled": false,
+  "execution_authority_created": false,
+  "global_pass_created": false,
+  "claim_truth_created": false,
+  "unknown_policy": "HOLD"
+}

@@ -1,0 +1,37 @@
+{
+  "transition_id": "EXAMPLE-TRANSITION-001",
+  "subject": {
+    "system_id": "SYSTEM-001",
+    "component_before": "COMPONENT-V1",
+    "component_after": "COMPONENT-V2"
+  },
+  "authority": {
+    "prior_authority_state": {},
+    "mutation": {},
+    "resulting_authority_state": {}
+  },
+  "transition_evidence": {
+    "evidence": [],
+    "evidence_time": null,
+    "evidence_validity": "UNKNOWN",
+    "dependencies": [],
+    "unresolved_obligations": [],
+    "revalidation_triggers": []
+  },
+  "restriction_continuity": {
+    "restriction_before": {},
+    "handoff": {},
+    "restriction_after": null,
+    "restart": {}
+  },
+  "assurance_transfer": {
+    "validated_pair": {},
+    "current_pair": {},
+    "transfer_test": {}
+  },
+  "witness_independence": {
+    "receipts": [],
+    "source_independence_known": false
+  },
+  "requested_action": "INSPECT_ONLY"
+}
